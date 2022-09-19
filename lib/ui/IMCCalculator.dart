@@ -12,7 +12,6 @@ class _IMCCalculatorState extends State<IMCCalculator> {
   TextEditingController weightController = TextEditingController();
   TextEditingController heightController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey();
-  String _textInfo = '';
 
   void _resetInfos() {
     _formKey.currentState?.reset();
@@ -122,14 +121,6 @@ class _IMCCalculatorState extends State<IMCCalculator> {
                   ),
                 ),
               ),
-              Text(
-                _textInfo,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  color: Colors.green,
-                  fontSize: 25,
-                ),
-              )
             ],
           ),
         ),
